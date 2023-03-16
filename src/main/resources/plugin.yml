@@ -1,0 +1,4 @@
+name: VariableHunger
+version: '${project.version}'
+main: com.fntsyrdr.variablehunger.VariableHunger
+api-version: 1.19
