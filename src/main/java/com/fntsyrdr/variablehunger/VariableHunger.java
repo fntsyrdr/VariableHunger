@@ -16,7 +16,7 @@ public final class VariableHunger extends JavaPlugin {
 
         getConfig().options().copyDefaults();
         saveDefaultConfig();
-        getServer().getPluginManager().registerEvents(new HungerAdjustments(), this);
+        getServer().getPluginManager().registerEvents(new HungerAdjustments(this), this);
 
         log.info("Plugin Enable Finished");
     }

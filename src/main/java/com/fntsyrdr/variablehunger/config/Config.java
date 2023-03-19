@@ -80,4 +80,15 @@ public class Config implements IConfig {
     public boolean ChangeMax(int newMax){
         return ChangeConfigValues(this.currentHungerDefault, this.currentHungerSpeed, newMax);
     }
+
+    public int getMaxHungerSpeed() {
+        return maxHungerSpeed;
+    }
+    public int getCurrentHungerSpeed(){
+        return currentHungerSpeed;
+    }
+
+    public int getCurrentHungerDefault() {
+        return currentHungerDefault;
+    }
 }

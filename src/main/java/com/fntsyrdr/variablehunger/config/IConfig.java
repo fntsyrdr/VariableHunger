@@ -55,4 +55,22 @@ public interface IConfig {
      * @return boolean indicating whether the config was changed successfully
      */
     boolean ChangeConfigValues(int newDefault, int newCurrent, int newMax);
+
+    /**
+     *  Gets the maximum hunger speed from the config
+     * @return max hunger speed
+     */
+    int getMaxHungerSpeed();
+
+    /**
+     *  Gets the current hunger speed from the config
+     * @return current hunger speed
+     */
+    int getCurrentHungerSpeed();
+
+    /**
+     *  Gets the default hunger speed value (value that current would need to be to not change anything) from the config
+     * @return current hunger default
+     */
+    int getCurrentHungerDefault();
 }
