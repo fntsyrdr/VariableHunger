@@ -2,6 +2,8 @@ package com.fntsyrdr.variablehunger;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import com.fntsyrdr.variablehunger.listeners.HungerAdjustments;
+
+import java.io.File;
 import java.util.logging.Logger;
 
 public final class VariableHunger extends JavaPlugin {
@@ -16,13 +18,13 @@ public final class VariableHunger extends JavaPlugin {
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new HungerAdjustments(), this);
 
-
-
         log.info("Plugin Enable Finished");
     }
 
     @Override
     public void onDisable() {
-        log.info("Plugin Disabled");
+        log.info("Plugin Disable Started");
+
+        log.info("Plugin Disable Finished");
     }
 }

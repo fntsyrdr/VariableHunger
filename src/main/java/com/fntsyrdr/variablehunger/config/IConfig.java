@@ -1,4 +1,4 @@
-package com.fntsyrdr.variablehunger;
+package com.fntsyrdr.variablehunger.config;
 
 
 /**
