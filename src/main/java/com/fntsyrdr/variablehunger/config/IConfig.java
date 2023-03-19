@@ -1,6 +1,8 @@
 package com.fntsyrdr.variablehunger.config;
 
 
+import org.bukkit.plugin.Plugin;
+
 /**
  * This interface programmatically gets and adjusts config values
  *
@@ -9,7 +11,7 @@ package com.fntsyrdr.variablehunger.config;
 public interface IConfig {
 
     /**
-     * Ensures that the plugin is valid
+     * Ensures that the config in memory valid
      *
      * @return boolean indicating whether the plugin meets constraints on config
      * */
